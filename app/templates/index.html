@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', path='/css/main.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Docs</title>
+</head>
+<body>
+
+    <h1 class="p-5 text-7xl text-center font-mono">{{ docs['info']['title'] }}</h1>
+
+    <p class="font-mono">
+        {{ docs}}
+    </p>
+    
+</body>
+</html>

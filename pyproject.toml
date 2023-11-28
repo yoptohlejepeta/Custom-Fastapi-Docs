@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "custom-fastapi-docs"
+version = "0.1.0"
+description = "Custom docs for Fastapi routes"
+authors = ["yoptohlejepeta <peta.kotlan@seznam.cz>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "custom_fastapi_docs"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jinja2 = "^3.1.2"
+fastapi = "^0.104.1"
+requests = "^2.31.0"
+pytailwindcss = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
