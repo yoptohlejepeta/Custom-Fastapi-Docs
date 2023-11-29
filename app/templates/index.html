@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="bg-slate-800">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- Tailwind cdn: REMOVE IN PRODUCTION -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Docs</title>
 </head>
 <body>
 
-    <h1 class="p-5 text-7xl text-center font-mono">{{ docs['info']['title'] }}</h1>
+    <h1 class="p-5 text-7xl text-white text-center font-mono">{{ docs['info']['title'] }}</h1>
 
-    <p class="font-mono">
-        {{ docs}}
-    </p>
+    <div class="container mx-auto">
+        <p class="font-mono text-gray-300">
+            {{ docs}}
+        </p>
+    </div>
     
 </body>
 </html>
